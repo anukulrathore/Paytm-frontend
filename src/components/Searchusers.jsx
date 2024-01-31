@@ -26,7 +26,7 @@ const Searchusers = ({users}) => {
               </div>
               <label htmlFor="users" className='  mb-2 text-sm font-bold md:text-xl  text-gray-900 dark:text-white'>{user.firstname}</label>
             </div>
-            <button type="submit" className=" text-white bg-gray-900 hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onClick={()=> handleSubmit(user)}>Submit</button>
+            <button type="submit" className=" text-white bg-gray-900 hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onClick={()=> handleSubmit(user)}>Send Money</button>
           </div>
           ))}
     </div>

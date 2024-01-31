@@ -22,7 +22,7 @@ const Sendmoney = () => {
                     Authorization: `Bearer ${token}`
                 }
             })
-            if(response.status===200){
+            if(response.status===400){
                 alert("Transfer successful");
                 navigate('/dashboard')
             }
