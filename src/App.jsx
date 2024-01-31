@@ -4,6 +4,7 @@ import Signin from "./components/Signin"
 import Dashboard from "./components/Dashboard"
 import Sendmoney from "./components/Sendmoney"
 import ProtectedRoute from "./components/ProtectedRoute"
+import Homepage from "./components/Homepage"
 
 
 
@@ -15,7 +16,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        
+        <Route path="/" element={<Homepage />}></Route>
         <Route path="/signup" element={<Signup />}></Route>
         <Route path="/signin" element={<Signin />}></Route>
         <Route path='/dashboard' element={
