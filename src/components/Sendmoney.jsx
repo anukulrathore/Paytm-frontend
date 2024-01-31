@@ -26,6 +26,10 @@ const Sendmoney = () => {
                 alert("Transfer successful");
                 navigate('/dashboard')
             }
+            else{
+                alert("Insufficient balance");
+                navigate('/dashboard')
+            }
         } catch (error) {
             console.log(error);
         }
