@@ -4,6 +4,7 @@ import { balance, transferto } from '../state'
 import {  useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
+
 const Sendmoney = () => {
     const navigate = useNavigate();
     const user = useRecoilValue(transferto)
@@ -22,15 +23,13 @@ const Sendmoney = () => {
                     Authorization: `Bearer ${token}`
                 }
             })
-            if(response.status===400){
+            if(response.status===200){
                 alert("Transfer successful");
                 navigate('/dashboard')
             }
-            else{
-                alert("Insufficient balance");
-                navigate('/dashboard')
-            }
+            
         } catch (error) {
+            alert("Insufficient Balance")
             console.log(error);
         }
       }
