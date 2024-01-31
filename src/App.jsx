@@ -29,7 +29,7 @@ function App() {
                     <Sendmoney />
                 </ProtectedRoute>
         } />
-        <Route path="/*" element={<Signup />}></Route>
+        {/* <Route path="/*" element={<Signup />}></Route> */}
         {/* <Route path="/dashboard" element={<Dashboard />}></Route>
         <Route path="/sendmoney" element={<Sendmoney />}></Route> */}
       </Routes>
