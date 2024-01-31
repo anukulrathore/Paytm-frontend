@@ -17,7 +17,7 @@ const Signup = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:3000/api/v1/user/signup', {
+            const response = await axios.post('https://paytm-backend-5lfy.onrender.com/api/v1/user/signup', {
                 username,
                 firstname,
                 lastname,

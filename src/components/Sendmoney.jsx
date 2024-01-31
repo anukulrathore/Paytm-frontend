@@ -13,7 +13,7 @@ const Sendmoney = () => {
     
       const handleTransfer = async () => {
         try {
-            const response = await axios.post('http://localhost:3000/api/v1/account/transfer',{
+            const response = await axios.post('https://paytm-backend-5lfy.onrender.com/api/v1/account/transfer',{
                 to:user.userId,
                 amount: amount
             },

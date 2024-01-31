@@ -16,7 +16,7 @@ const Dashboard = () => {
   useEffect(() => {
     async function fetchUsers(){
       try {
-        const response = await axios.get('http://localhost:3000/api/v1/user/bulk?filter='+filter)
+        const response = await axios.get('https://paytm-backend-5lfy.onrender.com/api/v1/user/bulk?filter='+filter)
         setusers(response.data.user);
       } catch (error) {
         console.log(error)
@@ -29,7 +29,7 @@ const Dashboard = () => {
   
   async function getbalance(){
     try {
-      const response = await axios.get('http://localhost:3000/api/v1/account/balance',{
+      const response = await axios.get('https://paytm-backend-5lfy.onrender.com/api/v1/account/balance',{
         headers: {
           Authorization: `Bearer ${token}`
         }
